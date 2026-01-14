@@ -10,7 +10,6 @@ import {
 
 initializeApp();
 
-// HTTP endpoints
 export const createSession = onRequest({
   cors: true,
 }, withAuth(createSessionHandler));
