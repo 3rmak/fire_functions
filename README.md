@@ -9,7 +9,7 @@ This project gives you HTTP endpoints to manage training sessions stored in Fire
 ## Getting Started
 
 You'll need:
-- Pull the project
+- Clone the project
 - Node.js 18 or higher
 - A Firebase project (create one at [console.firebase.google.com](https://console.firebase.google.com))
 
