@@ -1,4 +1,11 @@
+// Load environment variables from .env file in development
+import { config } from 'dotenv';
+if (process.env.NODE_ENV !== 'production') {
+  config();
+}
 import { initializeApp } from 'firebase-admin/app';
+initializeApp();
+
 import { onRequest } from 'firebase-functions/v2/https';
 import { withAuth } from './middleware/withAuth';
 import {
@@ -7,8 +14,6 @@ import {
   updateSessionStatusHandler,
   listSessionsHandler,
 } from './handlers/sessionHandlers';
-
-initializeApp();
 
 export const createSession = onRequest({
   cors: true,
