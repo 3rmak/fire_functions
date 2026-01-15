@@ -1,6 +1,6 @@
 // Load environment variables from .env file in development
-import { config } from 'dotenv';
 if (process.env.NODE_ENV !== 'production') {
+  const { config } = require('dotenv');
   config();
 }
 import { initializeApp } from 'firebase-admin/app';

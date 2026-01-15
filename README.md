@@ -270,3 +270,5 @@ npm run test:watch
 - TypeScript strict mode is enabled for better type safety
 - As long as there is only one .env variable, no need to implement 
   validation mechanism. But could be improved
+- As a compomise used Google Cloud Function security option with not authenticated access. 
+  Otherwise another node client with a service account required to sign OIDC tokens
