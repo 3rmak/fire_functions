@@ -1,5 +1,5 @@
 import { SessionService } from '../services/sessionService';
-import { NotFoundError } from '../utils/errors';
+import { NotFoundError } from '../types/errors';
 import { initializeApp } from 'firebase-admin/app';
 
 // Initialize Firebase Admin for testing

@@ -1,5 +1,5 @@
 import { Request } from 'firebase-functions/v2/https';
-import { UnauthorizedError } from '../utils/errors';
+import { UnauthorizedError } from '../types/errors';
 import { API_KEY_HEADER, BEARER_PREFIX } from '../constants/app';
 
 const VALID_API_KEY = process.env.API_KEY;

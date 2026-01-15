@@ -1,5 +1,5 @@
 import { SessionStatus } from '../types/session';
-import { ValidationError } from './errors';
+import { ValidationError } from '../types/errors';
 import { VALID_REGIONS, VALID_STATUSES } from '../constants/app';
 import { DEFAULT_LIMIT, MIN_LIMIT, MAX_LIMIT, DEFAULT_OFFSET } from '../constants/limits';
 

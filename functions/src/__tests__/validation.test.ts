@@ -5,7 +5,7 @@ import {
   validateLimit,
   validateOffset,
 } from '../utils/validation';
-import { ValidationError } from '../utils/errors';
+import { ValidationError } from '../types/errors';
 import { DEFAULT_LIMIT, DEFAULT_OFFSET } from '../constants/limits';
 
 describe('Validation utilities', () => {

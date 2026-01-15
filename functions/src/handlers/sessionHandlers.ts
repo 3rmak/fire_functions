@@ -19,7 +19,7 @@ export async function createSessionHandler(req: Request, res: Response): Promise
       data: session,
     });
   } catch (error) {
-    console.error('Failed to create session');
+    console.error('Failed to create session', error);
     throw error;
   }
 }
@@ -37,7 +37,7 @@ export async function getSessionHandler(req: Request, res: Response): Promise<vo
       data: session,
     });
   } catch (error) {
-    console.error('Failed to get session');
+    console.error('Failed to get session', error);
     throw error;
   }
 }
@@ -57,7 +57,7 @@ export async function updateSessionStatusHandler(req: Request, res: Response): P
       data: session,
     });
   } catch (error) {
-    console.error('Failed to update session status');
+    console.error('Failed to update session status', error);
     throw error;
   }
 }
@@ -92,7 +92,7 @@ export async function listSessionsHandler(req: Request, res: Response): Promise<
       },
     });
   } catch (error) {
-    console.error('Failed to list sessions');
+    console.error('Failed to list sessions', error);
     throw error;
   }
 }

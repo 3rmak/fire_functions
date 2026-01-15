@@ -1,9 +1,9 @@
 // Set API_KEY before any imports
 process.env.API_KEY = 'test-api-key';
 
-import { validateApiKey } from '../middleware/auth';
+import { validateApiKey } from '../utils/auth';
 import { Request } from 'firebase-functions/v2/https';
-import { UnauthorizedError } from '../utils/errors';
+import { UnauthorizedError } from '../types/errors';
 
 describe('Authentication middleware', () => {
   let mockReq: Partial<Request>;

@@ -1,6 +1,6 @@
 import { getFirestore, Timestamp } from 'firebase-admin/firestore';
 import { Session, SessionStatus, ListSessionsQuery } from '../types/session';
-import { NotFoundError } from '../utils/errors';
+import { NotFoundError } from '../types/errors';
 import { randomUUID } from 'crypto';
 import { SESSIONS_COLLECTION } from '../constants/app';
 import { DEFAULT_LIMIT, DEFAULT_OFFSET } from '../constants/limits';

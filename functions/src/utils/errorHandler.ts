@@ -1,5 +1,5 @@
 import { Response } from 'express';
-import { AppError } from './errors';
+import { AppError } from '../types/errors';
 
 export function handleError(error: unknown, res: Response): void {
   if (res.headersSent) return;
