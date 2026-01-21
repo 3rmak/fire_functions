@@ -58,7 +58,7 @@ This starts:
 - Firestore on port 8080
 - Emulator UI on port 4000
 
-Test endpoints at `http://localhost:5001/medverse-826dc/us-central1/...`
+Test endpoints at `http://localhost:5001/project-id/us-central1/...`
 
 ## Deploying
 
@@ -86,8 +86,8 @@ Authorization: Bearer api-key
 
 ### Base URLs
 
-- **Production**: `https://us-central1-medverse-826dc.cloudfunctions.net`
-- **Local**: `http://localhost:5001/medverse-826dc/us-central1`
+- **Production**: `https://us-central1-project-id.cloudfunctions.net`
+- **Local**: `http://localhost:5001/project-id/us-central1`
 
 ### Response Format
 
